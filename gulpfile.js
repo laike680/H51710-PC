@@ -2,8 +2,8 @@
 let gulp=require("gulp"),
 	js=require("gulp-uglify"),
 	htmlmin=require("gulp-htmlmin"),
-	sass=requeire("gulp-sass"),
-	connect=requeire("gulp-connect");
+	sass=require("gulp-sass"),
+	connect=require("gulp-connect");
 
 // 启动服务器
 gulp.task("server",function(){
@@ -15,7 +15,14 @@ gulp.task("server",function(){
 
 // 定义gulp任务，压缩html
 gulp.task("html",function(){
-	gulp.src(["**/*.html","!node_modules/**/*.html"])
+	gulp.src(["html/*.html","!node_modules/**/*.html"])
+	.pipe(htmlmin({collapseWhitespace: true, minifyCSS:true, minifyJS:true}))
+	.pipe(gulp.dest("dest/html"))
+	.pipe(connect.reload());
+});
+
+gulp.task("indexhtml",function(){
+	gulp.src("index.html")
 	.pipe(htmlmin({collapseWhitespace: true, minifyCSS:true, minifyJS:true}))
 	.pipe(gulp.dest("dest"))
 	.pipe(connect.reload());
@@ -32,9 +39,6 @@ gulp.task("sass",function(){
 // 定义gulp任务，压缩js
 gulp.task("js",function(){
 	gulp.src("js/**/*.js")
-	.pipe(babel({
-            presets: ['env']//解决es6箭头函数兼容问题
-        }))
 	.pipe(js())
 	.pipe(gulp.dest("dest/js"))
 	.pipe(connect.reload());
@@ -65,8 +69,8 @@ gulp.task("copyfile",["image","lib","mock"]);
 gulp.task("watch",function(){
 	gulp.watch("sass/**/*.scss", ["sass"]);
 	gulp.watch("js/**/*.js",["js"]);
-	gulp.watch("index.html",["html"]);
-	gulp.watch("html/**/*.html",[html]);
+	gulp.watch("index.html",["indexhtml"]);
+	gulp.watch("html/**/*.html",["html"]);
 });
 
-gulp.task("default", ["html", "js", "sass", "copyfile", "server", "watch"]);
+gulp.task("default", ["indexhtml","html", "js", "sass", "copyfile", "server", "watch"]);
