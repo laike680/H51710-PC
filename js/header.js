@@ -43,6 +43,58 @@ $(function(){
 			$(".nav_pull_woman").css({"display":"none"});
 		});
 		
-		
+		// 滚动吸顶
+		$(window).scroll(function(){
+			var _top=$(window).scrollTop();
+			if(_top>130){
+				$(".header_bottom_box").css({"position":"fixed","top":0,"z-index":9});
+				$(".login_on").html('<a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><br/><a href="#">我的定制</a><span>|</span> <a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">0</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
+				$(".login_on").css({"position":"position","top":5,"left":-80})
+			}else{
+				$(".header_bottom_box").css({"position":"static"});
+				$(".login_on").html('<a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><span>|</span><a href="#">我的定制</a><span>|</span><a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">0</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
+				$(".login_on").css({"position":"position","top":-20,"left":-180});
+				
+			};
+			if(_top>4960){
+				$(".link_top").css({"background":"url(/images/scroll_top.png) no-repeat left"})
+			}else{
+				$(".link_top").css({"background":"url(/images/scroll_top.png) no-repeat right"})
+			};
+			if(_top>400){
+				$(".link_top").css({"display":"block"})
+			}else{
+				$(".link_top").css({"display":"none"})
+			};
+		});
+
+		$(".search .search_box :text").keyup(function(){	
+					var q=$(this).val();
+					var html="";
+					$.ajax({
+					type:"get",
+					dataType:"jsonp",
+					url:"https://suggest.taobao.com/sug?code=utf-8&q="+q+"&callback=?;", 
+					success:function(data){			
+							data=data.result
+							for(var i=0,len=data.length;i<len;i++){
+								html+="<div>"+data[i][0]+"</div>"
+							}
+
+							$(".search_soso").html(html);			
+							$(".search_soso div").on("click",function(){				
+								$(".search .search_box :text").val($(this).text());
+								$(".search_soso").html("");
+								console.log(1)
+
+							});
+						}
+					})	
+					
+			});
+
+			
+	
+
 	});
 });

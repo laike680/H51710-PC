@@ -1,0 +1,18 @@
+{
+
+	"res_code":0,
+	"res_error":"潮流女装",
+	"res_body":{
+		"data":[
+			{"id":1, "title":" 别玫 2018春季新款女装精品连衣裙时尚高档V领印花修身显瘦女裙 红色 S", "price": 302.10, "img":"/images/list/shangpin1.jpg"},
+			{"id":2, "title":"小葱良裁原创自制日系和风中长款毛呢大衣 猫咪图案绑带外套", "price":4399, "img":"/images/list/shangpin2.jpg"},
+			{"id":3, "title":"odd maker 牛角扣羊毛毛呢外套 2色", "price": 296.10, "img":"/images/list/shangpin3.jpg"},
+			{"id":4, "title":"自觉原创 高端90支80羊毛精梳千鸟格大衣女双面呢手工系带廓形灰", "price": 998, "img":"/images/list/shangpin4.jpg"},
+			{"id":5, "title":"自定义衣方法服", "price": 668, "img":"/images/list/shangpin5.jpg"},
+			{"id":4, "title":"自觉原创 高端90支80羊毛精梳千鸟格大衣女双面呢手工系带廓形灰", "price": 998, "img":"/images/list/shangpin4.jpg"},
+			{"id":5, "title":"自定义衣方法服", "price": 668, "img":"/images/list/shangpin12.jpg"},
+			{"id":6, "title":"自定义答复衣服", "price": 668, "img":"/images/list/shangpin6.jpg"}
+			
+		]
+	}
+}

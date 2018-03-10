@@ -13,7 +13,6 @@ ul li{list-style: none;}
 	width:1084px;
 	height:130px;
 	margin: 0 auto;
-	overflow: hidden;
 	font-size:12px;
 	.logo{
 		width:225px;
@@ -51,6 +50,7 @@ ul li{list-style: none;}
 		.search_box{
 			width:320px;
 			height:30px;
+			position: relative;
 
 			/*搜索输入框*/
 			.search_text{
@@ -61,6 +61,7 @@ ul li{list-style: none;}
 				border:2px solid #fff;
 				background-color:#000;
 				float: left;
+				color: #fff;
 			}
 			
 			/*搜索按钮*/
@@ -70,6 +71,18 @@ ul li{list-style: none;}
 				background-color:#fff;
 				border:0;
 				float: left;
+			}
+			.search_soso{
+				width:220px;
+				position: absolute;
+				top:30px;
+				background-color: rgba(100,100,100,0.8);
+				color:#fff;
+				z-index: 10;
+				padding-left: 20px;
+				div{
+					z-index: 50;
+				}
 			}
 		}
 		.search_list1 a,.search_list2 a{
@@ -82,6 +95,11 @@ ul li{list-style: none;}
 
 	}
 	
+}
+.header_bottom_box{
+	position: static;
+	width:100%;
+	background-color: #000;
 }
 .header_bottom{
 	width:1084px;
@@ -208,8 +226,11 @@ ul li{list-style: none;}
 		font-size: 12px;
 		position: relative;
 		text-align: center;
+
 		/*未登录状态*/
 		.login_off{
+			display: block;
+			margin-top: 7px;
 			text-align: center;
 			line-height: 30px;
 			a{color: #fff;}
@@ -217,7 +238,7 @@ ul li{list-style: none;}
 			}
 		/*已登录状态*/
 		.login_on{
-			display:block;
+			display: none;
 			width:300px;
 			height: 22px;
 			position: absolute;
@@ -263,6 +284,16 @@ ul li{list-style: none;}
 			}
 		}
 		}
+}
+
+/*直达顶部*/
+.link_top{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	bottom: 5%;
+	right: 5%;
+	background: url(/images/scroll_top.png) no-repeat right;
 }
 
 /*网页尾部*/

@@ -78,10 +78,35 @@
 			text-shadow: 0px 1px 10px #FF0000;
 		}
 	}
+	/*优选品牌*/
 	.youxuanpinpai{
 		width:1000px;
 		margin: 0 auto;
-
+	}
+	/*人气单品*/
+	.renqidanpin{
+		width:1000px;
+		margin: 0 auto;
+	}
+	/*最新上架*/
+	.zuixinshangjia{
+		width:1000px;
+		margin: 0 auto;
+	}
+	/*潮流女装*/
+	.chaoliunvzhuang{
+		width:1000px;
+		margin: 0 auto;
+	}
+	/*精品男装*/
+	.jingpinnanzhuang{
+		width:1000px;
+		margin: 0 auto;
+	}
+	/*惊喜折扣*/
+	.jingxizhekou{
+		width:1000px;
+		margin: 0 auto;
 	}
 	.shangpin_biaoti{
 		border: 1px solid;
@@ -106,6 +131,30 @@
 			img{
 				width:295px;
 				height:158px;
+			}
+		}
+		.shangpin_neirong_box2{
+			width:225px;
+			height:400px;
+			margin-top: 10px;
+			text-align: center;
+			font-size: 12px;
+			img{
+				width:225px;
+				height:310px;
+			}
+			a{
+				color:#000;
+			}
+			p{
+				height: 30px;
+				color: red;
+				font-weight: 600;
+			}
+			.shangpin_neirong_box2_cart{
+				width: 60%;
+				border: 1px solid #000;
+				margin: 0 auto;
 			}
 		}
 	}

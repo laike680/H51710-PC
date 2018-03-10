@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>首页</title>
 	<link rel="stylesheet" type="text/css" href="/css/basis.css">
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	
+	<link rel="stylesheet" type="text/css" href="/css/index.css">	
 	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/artTemplate/template.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="/js/header.js"></script>
 	<script src="/js/footer.js"></script>
@@ -41,43 +41,100 @@
 		<div class="youxuanpinpai">
 			<div class="shangpin_biaoti"><a href="#">优选品牌</a></div>
 			<div class="shangpin_neirong">
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic1.jpg"></a></div>
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic2.jpg"></a></div>
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic3.jpg"></a></div>
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic4.jpg"></a></div>
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic5.jpg"></a></div>
-				<div class="shangpin_neirong_box1"><a href="#"><img src="/images/pic6.jpg"></a></div>
+
+				<script type="text/html" id="youxuanpinpai_template">
+					{{each products as prod}}
+						<div class="shangpin_neirong_box1">
+							<a href="#"><img src="{{prod.img}}"></a>
+						</div>
+					{{/each}}
+					</script>
 			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 人气单品 -->
 		<div class="renqidanpin">
 			<div class="shangpin_biaoti"><a href="#">人气单品</a></div>
-			
+			<div class="shangpin_neirong">
+					<script type="text/html" id="renqidanpin_template">
+					{{each products as prod}}
+						<div class="shangpin_neirong_box2">
+						<a href="#"><img src="{{prod.img}}"></a>
+						<p><a href="#">{{prod.title}}</a></p>
+						<p>¥{{prod.price}}</p>
+						<div class="shangpin_neirong_box2_cart">加入购物车</div>
+						</div>
+					{{/each}}
+					</script>				
+			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 最新上架 -->
 		<div class="zuixinshangjia">
 			<div class="shangpin_biaoti"><a href="#">最新上架</a></div>
-
+			<div class="shangpin_neirong">
+				<script type="text/html" id="zuixinshangjia_template">
+				{{each products as prod}}
+					<div class="shangpin_neirong_box2">
+					<a href="#"><img src="{{prod.img}}"></a>
+					<p><a href="#">{{prod.title}}</a></p>
+					<p>¥{{prod.price}}</p>
+					<div class="shangpin_neirong_box2_cart">加入购物车</div>
+					</div>
+				{{/each}}
+				</script>				
+			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 潮流女装 -->
 		<div class="chaoliunvzhuang">
 			<div class="shangpin_biaoti"><a href="#">潮流女装</a></div>
-
+			<div class="shangpin_neirong">
+				<script type="text/html" id="chaoliunvzhuang_template">
+				{{each products as prod}}
+					<div class="shangpin_neirong_box2">
+					<a href="#"><img src="{{prod.img}}"></a>
+					<p><a href="#">{{prod.title}}</a></p>
+					<p>¥{{prod.price}}</p>
+					<div class="shangpin_neirong_box2_cart">加入购物车</div>
+					</div>
+				{{/each}}
+				</script>				
+			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 精品男装 -->
 		<div class="jingpinnanzhuang">
 			<div class="shangpin_biaoti"><a href="#">精品男装</a></div>
-
+			<div class="shangpin_neirong">
+				<script type="text/html" id="jingpinnanzhuang_template">
+				{{each products as prod}}
+					<div class="shangpin_neirong_box2">
+					<a href="#"><img src="{{prod.img}}"></a>
+					<p><a href="#">{{prod.title}}</a></p>
+					<p>¥{{prod.price}}</p>
+					<div class="shangpin_neirong_box2_cart">加入购物车</div>
+					</div>
+				{{/each}}
+				</script>				
+			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 惊喜折扣 -->
 		<div class="jingxizhekou">
 			<div class="shangpin_biaoti"><a href="#">惊喜折扣</a></div>
-
+			<div class="shangpin_neirong">
+				<script type="text/html" id="jingxizhekou_template">
+				{{each products as prod}}
+					<div class="shangpin_neirong_box2">
+					<a href="#"><img src="{{prod.img}}"></a>
+					<p><a href="#">{{prod.title}}</a></p>
+					<p>¥{{prod.price}}</p>
+					<div class="shangpin_neirong_box2_cart">加入购物车</div>
+					</div>
+				{{/each}}
+				</script>				
+			</div>
 			<div class="canpin_more"><a href="#"><img src="/images/more.png"/></a></div>
 		</div>
 		<!-- 网站介绍 -->

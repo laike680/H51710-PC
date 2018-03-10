@@ -1,0 +1,13 @@
+{
+	"res_code":0,
+	"res_error":"账户",
+	"res_body":{
+		"data":[
+			{"username":"xiaoming", "password":123456,"name":"小明","lv":"lv1"},
+			{"username":"zhangshan", "password":123456,"name":"张三","lv":"lv2"},
+			{"username":"wangwu", "password":123456,"name":"王五","lv":"lv3"},
+			{"username":"zhaoer", "password":123456,"name":"赵二","lv":"lv4"},
+			{"username":"lisi", "password":123456,"name":"李四","lv":"lv5"}
+		]
+	}
+}

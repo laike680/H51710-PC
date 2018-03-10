@@ -1,0 +1,16 @@
+{
+	"res_code":0,
+	"res_error":"精品男装",
+	"res_body":{
+		"data":[
+			{"id":7, "title":"自定义衣服", "price": 668, "img":"/images/list/shangpin7.jpg"},
+			{"id":8, "title":"自定义大沙发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin8.jpg"},
+			{"id":9, "title":"自定义打发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin9.jpg"},
+			{"id":10, "title":"自定我会发的规划义衣服", "price": 668, "img":"/images/list/shangpin10.jpg"},
+			{"id":11, "title":"自定电饭锅电饭锅义衣服", "price": 668, "img":"/images/list/shangpin11.jpg"},
+			{"id":12, "title":"自定义雨天衣服", "price": 668, "img":"/images/list/shangpin12.jpg"},
+			{"id":8, "title":"自定义大沙发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin8.jpg"},
+			{"id":9, "title":"自定义打发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin9.jpg"}
+		]
+	}
+}
