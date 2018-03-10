@@ -1,0 +1,133 @@
+
+.content{
+	width:100%;
+	.banner{
+		width:100%;
+		height: 410px;
+		overflow: hidden;
+		position: relative;
+		.banner_box{
+			.carousel-content{
+					position: relative;
+					display: inline-block;
+					width: 100%;
+				}
+				.carousel{
+					
+					height: 410px;
+					position: relative;
+					overflow: hidden;
+				}
+				.carousel li{
+					float: left;
+					position: absolute;
+					display: none;
+				}
+				.carousel li,.carousel li img{
+					width: 100%;
+					height: 100%;
+				}
+				.img-index{
+					position: absolute;
+				    bottom: 8px;
+				    width: 100%;
+				    display: flex;
+				    justify-content: center;
+				}
+				.img-index li{
+					float: left;
+				    width: 18px;
+				    height: 18px;
+				    line-height: 18px;
+				    text-align: center;
+				    border-radius: 10px;
+				    background-color: rgba(0,0,0,0.2);
+				    font-size: 12px;
+				    cursor: pointer;
+				    margin: 0 3px;
+				    color: #fff;
+				}
+				.img-index li.index{
+					background-color: rgba(255,15,15,0.6);
+				}
+				.img-index li:hover{
+					background-color: rgba(255,15,15,0.6);
+				}
+				.carousel-prev,.carousel-next{
+					position: absolute;
+					display: inline-block;
+					top: 40%;
+					cursor: pointer;
+				}
+				.carousel-prev{
+					left: 0;
+				}
+				.carousel-next{
+					right: 0;
+				}
+			}
+	}
+
+	.message{
+		width:80%;
+		height: 100px;
+		margin: 0 auto;
+		.message_box{
+			text-align: center;
+			line-height: 100px;	
+			text-shadow: 0px 1px 10px #FF0000;
+		}
+	}
+	.youxuanpinpai{
+		width:1000px;
+		margin: 0 auto;
+
+	}
+	.shangpin_biaoti{
+		border: 1px solid;
+		width:300px;
+		height:30px;
+		text-align: center;
+		line-height: 30px;
+		margin: 0 auto;
+		font-size: 14px;
+		a{color: #000;}
+	}
+	.shangpin_neirong{
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+		
+		.shangpin_neirong_box1{
+			width:295px;
+			height:158px;
+			margin-top: 30px;
+			img{
+				width:295px;
+				height:158px;
+			}
+		}
+	}
+	.canpin_more{
+		width:1000px;
+		overflow: hidden;
+		a{
+			float:right;
+		}
+	}
+	.wangzhanjieshao{
+		width:1000px;
+		margin: 0 auto;
+		legend{
+			font-size: 16px;
+			padding: 10px 20px;
+			font-weight: 600;
+		}
+		p{
+			text-indent: 2em;
+			line-height: 30px;
+			padding: 0 20px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="/lib/jquery_plugins/ft-carousel.css" />
+		<style>						
+			.example {
+			width: 624px;
+			height: 180px;
+			font-size: 40px;
+			text-align: center;
+			}
+			
+			.carousel-item{line-height: 180px;color: #fff;font-family:  Arial Black}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="example">
+			<div class="ft-carousel" id="carousel_1">
+				<ul class="carousel-inner">
+					<li class="carousel-item"><img src="/images/banner1.jpg" /></li>
+					<li class="carousel-item"><img src="/images/banner2.jpg" /></li>
+					
+				</ul>
+				<!-- <div class="carousel-prev-btn"></div> -->
+			</div>
+		</div>
+
+		
+		<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+		<script src="/lib/jquery_plugins/ft-carousel.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#carousel_1").FtCarousel();
+
+			$("#carousel_2").FtCarousel({
+				index: 1,
+				auto: false
+			});
+			$("#carousel_3").FtCarousel({
+				index: 0,
+				auto: true,
+				time: 2000,
+				indicators: false,
+				buttons: true
+			});
+		</script>
+	</body>
+
+</html>

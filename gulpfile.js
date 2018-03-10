@@ -8,14 +8,14 @@ let gulp=require("gulp"),
 // 启动服务器
 gulp.task("server",function(){
 	connect.server({
-		root:".",
+		root:"dest",
 		livereload:true
 	})
 });
 
 // 定义gulp任务，压缩html
 gulp.task("html",function(){
-	gulp.src(["html/*.html","!node_modules/**/*.html"])
+	gulp.src("html/**/*.html")
 	.pipe(htmlmin({collapseWhitespace: true, minifyCSS:true, minifyJS:true}))
 	.pipe(gulp.dest("dest/html"))
 	.pipe(connect.reload());
