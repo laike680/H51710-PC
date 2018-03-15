@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>[眨眼网d2c原创服饰]</title>
+	<link rel="stylesheet" type="text/css" href="/css/basis.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">	
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="/lib/artTemplate/template.js"></script>
+	<script src="/js/list.js"></script>
+	<script src="/js/header.js"></script>
+	<script src="/js/footer.js"></script>
+
+</head>
+<body>
+</body>
+<header></header>
+<div class="list_main">
+	<div class="list_top">
+		<div class="list_top_sortBox">
+			<div class="list_top_sortBox_jiage">价格</div>
+			<div class="list_top_sortBox_xiaoliang">销量</div>			
+			<div class="list_top_sortBox_shijian">上架时间</div>
+		</div>
+		<div class="list_top_nav">
+			<div class="list_nav_yixuan">已选条件：
+				<span class="list_nav_yixuan_sex">女装</span>
+				<span class="list_nav_yixuan_style1">款式</span>
+				<span class="list_nav_yixuan_style2">中性</span>
+				<span class="list_nav_yixuan_price">0~99</span>
+			</div>
+			<div class="list_nav_sex">
+				<span class="list_nav_sex_nv">女装</span>
+				<span class="list_nav_sex_nan">男装</span>
+			</div>
+			<div class="list_nav_style1">
+				<span class="list_nav_style1_nv">款式</span>
+				<span class="list_nav_style1_nan">场景</span>
+				<span class="list_nav_style1_nv">风格</span>
+				<span class="list_nav_style1_nan">人物</span>
+				<span class="list_nav_style1_nv">定制/精品</span>
+				<span class="list_nav_style1_nan">新品</span>
+			</div>
+			<div class="list_nav_style2">
+				<span class="list_nav_style2_zx">中性</span>
+				<span class="list_nav_style2_qzsd">全织时代</span>
+				<span class="list_nav_style2_ym">umu 有沐</span>
+				<span class="list_nav_style2_zjsj">自觉设计</span>
+				<span class="list_nav_style2_anc">安妮陈</span>
+				<span class="list_nav_style2_howl">HOWL</span>
+				<span class="list_nav_style2_hxz">幻象者</span>
+				<span class="list_nav_style2_bear">Lightning bear</span>
+			</div>
+			<div class="list_nav_price">
+				<span class="list_nav_price_0">0~99</span>
+				<span class="list_nav_price_99">99~299</span>
+				<span class="list_nav_price_299">299~499</span>
+				<span class="list_nav_price_499">499~699</span>
+				<span class="list_nav_price_699">699以上</span>
+			</div>
+		</div>
+	</div>
+	<div class="list_bottom">
+		<div class="list_bottom_box">		
+			<script type="text/html" id="list_template">
+			{{each products as prod}}
+				<div class="list_neirong_box">
+					<a href="/html/detail.html?{{prod.id}}">
+						<img src="{{prod.img1}}">
+						<p>{{prod.title}}</p>
+						<p class="list_jiage">¥{{prod.price}}</p>
+					</a>
+				</div>
+			{{/each}}
+			</script>
+		</div>
+	</div>
+</div>
+<footer></footer>
+</html>

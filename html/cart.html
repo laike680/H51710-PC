@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>[眨眼网d2c原创服饰]</title>
+	<link rel="stylesheet" type="text/css" href="/css/basis.css">
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">	
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="/lib/artTemplate/template.js"></script>
+	<script src="/js/cart.js"></script>
+	<script src="/js/header.js"></script>
+	<script src="/js/footer.js"></script>
+</head>
+<body>
+<header></header>
+<!-- 购物车 -->
+<div class="cart_main">
+	<div class="cart_box">
+		<!-- 空购物车 -->
+		<div class="cart_empty">
+			<div class="cart_enmty_img"></div>
+			<div class="cart_empty_p">
+				您的购物车还是空的，赶紧行动吧！<a href="/index.html">返回首页</a>	
+			</div>
+		</div>
+		<!-- 有货的购物车 -->
+		<div class="cart_full">
+			<!-- 提示 -->
+			<div class="cart_full_zhuyi">
+				<img src="/images/zhuyi.jpg">商品请在一周内提交订单，否则系统将其自动移出购物车。
+			</div>
+			<!-- 购物车头部 -->
+			<div class="cart_full_header">
+				<div class="cart_full_xuanzhe">
+					<input type="checkbox" name="all" class="quanxuan" >全选
+				</div>
+				<div class="cart_full_xinxi">商品信息</div>
+				<div class="cart_full_jiage">价格</div>
+				<div class="cart_full_shuliang">数量</div>
+				<div class="cart_full_xj">小计</div>									
+				<div class="cart_full_shanchu"> </div>	
+			</div>
+			<!-- 购物车主体 -->
+			<div class="cart_full_main">
+				<script type="text/html" id="allcart_template">
+					{{each products as prod}}
+					<div class="cart_full_main_box">
+					<div class="cart_full_main_style3">
+						<a href="/html/detail.html?{{prod.id}}">{{prod.style3}}</a>
+					</div>
+					<div class="cart_full_main_shangpin">
+						<div class="cart_full_xuanzhe">
+						<input type="checkbox" name="{{prod.id}}" class="xuanzhe" >
+						</div>
+						<div class="cart_full_xinxi">
+							<div class="cart_full_xinxi_tupian">
+								<img src="{{prod.img1}}">
+							</div>
+							<div class="cart_full_xinxi_title">
+								<a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a>
+							</div>
+						</div>
+						<div class="cart_full_jiage">¥{{prod.price}}</div>
+						<div class="cart_full_shuliang">
+							<button class="cart_jian">-</button>
+							<input type="text" class="cart_shangpin_shuliang" value="{{prod.shuliang}}">
+							<button class="cart_jia">+</button>
+						</div>
+						
+						<div class="cart_full_xiaoji">¥{{(prod.shuliang*prod.price).toFixed(2)}}</div>									
+						<div class="cart_full_shanchu">删除</div>
+					</div>
+				</div>
+					{{/each}}
+				</script>
+		
+			</div>
+			<!-- 购物车尾部 -->
+			<div class="cart_full_foot">
+				<button class="qignkong">清空购物车</button>
+				<p class="cart_foot_xingxi">
+					已选商品<span class="cart_kuan">0</span>款 / 共
+					<span class="cart_all_shuliang">0</span>件,商品总价：¥<span class="cart_all_zongjia">0</span>
+				</p>
+				<button class="cart_jieshuan">立即结算</button>
+			</div>
+		</div>
+	</div>
+</div>
+<footer></footer>
+</body>
+</html>

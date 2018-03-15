@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>[眨眼网d2c原创服饰]</title>
+	<link rel="stylesheet" type="text/css" href="/css/basis.css">
+	<link rel="stylesheet" type="text/css" href="/css/confirm.css">	
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="/lib/artTemplate/template.js"></script>
+	<script src="/js/header.js"></script>
+	<script src="/js/footer.js"></script>
+	<script src="/js/confirm.js"></script>
+</head>
+<body>
+<header></header>
+<div class="con_mian">
+	<div class="con_box">
+		<div class="con_top">
+			<!-- <div class="con_top_shangpin">
+				<div class="con_top_header_xingxi">商品信息</div>
+				<div class="con_top_header_danjia">单价</div>
+				<div class="con_top_header_shuliang">数量</div>
+				<div class="con_top_header_xiaoji">小计</div>
+			</div> -->
+			<!-- <div class="con_top_box">
+				<script type="text/html" id="con_box">
+				{{each products as prod}}
+				<div class="con_top_shangpin_box">
+					<div class="con_top_xingxi">
+						<img src="{{prod.img1}}">
+						<p>{{prod.title}}</p>
+					</div>
+					<div class="con_top_header_danjia">¥{{prod.price}}</div>
+					<div class="con_top_header_shuliang">{{prod.shuliang}}</div>
+					<div class="con_top_header_xiaoji">¥{{(prod.price*prod.shuliang).toFixed(2)}}</div>
+				</div>
+				{{/each}}
+				</script>
+			</div> -->
+			<div class="con_top_shangpin">
+				
+			</div>
+		</div>
+		<div class="con_bottom">
+			<div class="name"><b>收货人姓名:</b><input type="text"></div>			
+			<div class="dizhi">
+				<div class="shouhuodizhi"><b>收货地址:</b></div>
+				<div class="shengshi"><b>省市:</b><input type="text" placeholder="省市"></div>
+				<div class="jiedao"><b>街道:</b><input type="text" placeholder="街道"></div>
+			</div>
+			<div class="dianhua"><b>电话:</b><input type="text" placeholder="你的电话"></div>
+			
+		</div>
+		<div class="qurenzhifu">
+			<div class="zhifubao">支付宝支付</div>
+			<div class="weixin">微信支付</div>
+			<div class="yinlian">银联支付</div>
+		</div>
+	</div>
+</div>
+<footer></footer>
+</body>
+</html>
