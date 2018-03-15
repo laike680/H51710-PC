@@ -1,0 +1,11 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+			{"id":101,"sex":"女装","style1":"风格","style2":"中性","style3":"别玫/BIEMEI","title":" 别玫 2018春季新款女装精品连衣裙时尚高档V领印花修身显瘦女裙 红色 S", "price": 378.10, "img1":"/images/list/101/101_1.jpg","img2":"/images/list/101/101_2.jpg","img3":"/images/list/101/101_3.jpg","img4":"/images/list/101/101_4.jpg","img5":"/images/list/101/101_5.jpg","img6":"/images/list/101/101_6.jpg"},
+			{"id":102,"sex":"女装","style1":"风格","style2":"中性","style3":"别玫/BIEMEI","title":"别玫 2018春季新款精品女装欧美印花圆领长袖系带中长款连衣裙 花色 S", "price": 417.10, "img1":"/images/list/102/102_1.jpg","img2":"/images/list/102/102_2.jpg","img3":"/images/list/102/102_3.jpg","img4":"/images/list/102/102_4.jpg","img5":"/images/list/102/102_5.jpg","img6":"/images/list/102/102_6.jpg"},
+			{"id":103,"sex":"女装","style1":"上衣","style2":"全织时代","style3":"别玫/BIEMEI","title":" 全织时代新款秋季圆领修身喇叭袖毛衣针织衫条纹时尚女装上衣开叉打底衫", "price": 129.10, "img1":"/images/list/103/103_1.jpg","img2":"/images/list/103/103_2.jpg","img3":"/images/list/103/103_3.jpg","img4":"/images/list/103/103_4.jpg","img5":"/images/list/103/103_5.jpg","img6":"/images/list/103/106_6.jpg"}
+		]
+	}
+}

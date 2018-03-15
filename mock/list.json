@@ -3,21 +3,15 @@
 	"res_error":"",
 	"res_body":{
 		"data":[
-			{"id":1, "title":" 别玫 2018春季新款女装精品连衣裙时尚高档V领印花修身显瘦女裙 红色 S", "price": 302.10, "img":"/images/list/shangpin1.jpg"},
-			{"id":2, "title":"小葱良裁原创自制日系和风中长款毛呢大衣 猫咪图案绑带外套", "price":4399, "img":"/images/list/shangpin2.jpg"},
-			{"id":3, "title":"odd maker 牛角扣羊毛毛呢外套 2色", "price": 296.10, "img":"/images/list/shangpin3.jpg"},
-			{"id":4, "title":"自觉原创 高端90支80羊毛精梳千鸟格大衣女双面呢手工系带廓形灰", "price": 998, "img":"/images/list/shangpin4.jpg"},
-			{"id":5, "title":"自定义衣方法服", "price": 668, "img":"/images/list/shangpin5.jpg"},
-			{"id":6, "title":"自定义答复衣服", "price": 668, "img":"/images/list/shangpin6.jpg"},
-			{"id":7, "title":"自定义衣服", "price": 668, "img":"/images/list/shangpin7.jpg"},
-			{"id":8, "title":"自定义大沙发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin8.jpg"},
-			{"id":9, "title":"自定义打发斯蒂芬衣服", "price": 668, "img":"/images/list/shangpin9.jpg"},
-			{"id":10, "title":"自定我会发的规划义衣服", "price": 668, "img":"/images/list/shangpin10.jpg"},
-			{"id":11, "title":"自定电饭锅电饭锅义衣服", "price": 668, "img":"/images/list/shangpin11.jpg"},
-			{"id":12, "title":"自定义雨天衣服", "price": 668, "img":"/images/list/shangpin12.jpg"},
-			{"id":13, "title":"自定义地方个地方衣服", "price": 668, "img":"/images/list/shangpin13.jpg"},
-			{"id":14, "title":"自定义衣让他一人头服", "price": 668, "img":"/images/list/shangpin14.jpg"},
-			{"id":15, "title":"自定义让他也有人衣服", "price": 668, "img":"/images/list/shangpin15.jpg"}
+			{"id":101,"sex":"女装","style1":"风格","style2":"中性","style3":"别玫/BIEMEI","title":" 别玫 2018春季新款女装精品连衣裙时尚高档V领印花修身显瘦女裙 红色 S", "price": 378.10, "img1":"/images/list/101/101_1.jpg","img2":"/images/list/101/101_2.jpg","img3":"/images/list/101/101_3.jpg","img4":"/images/list/101/101_4.jpg","img5":"/images/list/101/101_5.jpg","img6":"/images/list/101/101_6.jpg"},
+			{"id":102,"sex":"女装","style1":"人物","style2":"中性","style3":"别玫/BIEMEI","title":"别玫 2018春季新款精品女装欧美印花圆领长袖系带中长款连衣裙 花色 S", "price": 417.10, "img1":"/images/list/102/102_1.jpg","img2":"/images/list/102/102_2.jpg","img3":"/images/list/102/102_3.jpg","img4":"/images/list/102/102_4.jpg","img5":"/images/list/102/102_5.jpg","img6":"/images/list/102/102_6.jpg"},
+			{"id":103,"sex":"女装","style1":"场景","style2":"全织时代","style3":"别玫/BIEMEI","title":" 全织时代新款秋季圆领修身喇叭袖毛衣针织衫条纹时尚女装上衣开叉打底衫", "price": 129.10, "img1":"/images/list/103/103_1.jpg","img2":"/images/list/103/103_2.jpg","img3":"/images/list/103/103_3.jpg","img4":"/images/list/103/103_4.jpg","img5":"/images/list/103/103_5.jpg","img6":"/images/list/103/103_6.jpg"},
+			{"id":104,"sex":"女装","style1":"款式","style2":"上衣","style3":"全织时代","title":" 春季新款女装假两件圆领套头亮丝长袖针织打底衫薄款修身上衣", "price": 169.00, "img1":"/images/list/104/104_1.jpg","img2":"/images/list/104/104_2.jpg","img3":"/images/list/104/104_3.jpg","img4":"/images/list/104/104_4.jpg","img5":"/images/list/104/104_5.jpg","img6":"/images/list/104/104_6.jpg"},
+			{"id":105,"sex":"女装","style1":"新品","style2":"毛衣/针织衫","style3":"umu 有沐","title":" 定制 UMUTOPIA有沐原创设计 秋冬白色袖口拼接纯山羊绒V领羊毛针织衫", "price": 910.00, "img1":"/images/list/105/105_1.jpg","img2":"/images/list/105/105_2.jpg","img3":"/images/list/105/105_3.jpg","img4":"/images/list/105/105_4.jpg","img5":"/images/list/105/105_5.jpg","img6":"/images/list/105/105_6.jpg"},
+			{"id":106,"sex":"女装","style1":"定制/精品","style2":"大衣","style3":"自觉设计","title":"自觉原创 高端90支80羊毛精梳千鸟格大衣女双面呢手工系带廓形灰", "price": 1699.00, "img1":"/images/list/106/106_1.jpg","img2":"/images/list/106/106_2.jpg","img3":"/images/list/106/106_3.jpg","img4":"/images/list/106/106_4.jpg","img5":"/images/list/106/106_5.jpg","img6":"/images/list/106/106_6.jpg"},
+			{"id":107,"sex":"女装","style1":"风格","style2":"毛衣","style3":"安妮陈","title":"安妮陈女装花纹针织套头毛衣", "price": 241.00, "img1":"/images/list/107/107_1.jpg","img2":"/images/list/107/107_2.jpg","img3":"/images/list/107/107_3.jpg","img4":"/images/list/107/107_4.jpg","img5":"/images/list/107/107_5.jpg","img6":"/images/list/107/107_6.jpg"},
+			{"id":108,"sex":"男装","style1":"场景","style2":"外套","style3":"HOWL","title":"HOWL 情人节 男款复古咖色灯芯绒工装外套", "price": 241.00, "img1":"/images/list/108/108_1.jpg","img2":"/images/list/108/108_2.jpg","img3":"/images/list/108/108_3.jpg","img4":"/images/list/108/108_4.jpg","img5":"/images/list/108/108_5.jpg","img6":"/images/list/108/108_6.jpg"},
+			{"id":109,"sex":"男装","style1":"场景","style2":"外套","style3":"LNBR","title":"LNBR出品 原创潮牌大码 时尚连帽情侣加厚款短款羽绒服", "price": 241.00, "img1":"/images/list/109/109_1.jpg","img2":"/images/list/109/109_2.jpg","img3":"/images/list/109/109_3.jpg","img4":"/images/list/109/109_4.jpg","img5":"/images/list/108/108_5.jpg","img6":"/images/list/109/109_6.jpg"}
 		]
 	}
 }

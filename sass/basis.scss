@@ -239,11 +239,14 @@ ul li{list-style: none;}
 		/*已登录状态*/
 		.login_on{
 			display: none;
-			width:300px;
+			width:350px;
 			height: 22px;
 			position: absolute;
 			top:-20px;
 			left: -180px;
+			.login_tuichu{
+				cursor: pointer;
+			}
 			a{color: #fff;}
 			span{margin: 3px;}
 			.shangpinzhonglei{

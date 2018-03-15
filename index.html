@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title>[眨眼网d2c原创服饰]</title>
 	<link rel="stylesheet" type="text/css" href="/css/basis.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">	
 	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.cookie.js"></script>
 	<script src="/lib/artTemplate/template.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="/js/header.js"></script>
@@ -45,7 +46,7 @@
 				<script type="text/html" id="youxuanpinpai_template">
 					{{each products as prod}}
 						<div class="shangpin_neirong_box1">
-							<a href="#"><img src="{{prod.img}}"></a>
+							<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
 						</div>
 					{{/each}}
 					</script>
@@ -59,8 +60,8 @@
 					<script type="text/html" id="renqidanpin_template">
 					{{each products as prod}}
 						<div class="shangpin_neirong_box2">
-						<a href="#"><img src="{{prod.img}}"></a>
-						<p><a href="#">{{prod.title}}</a></p>
+						<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
+						<p><a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a></p>
 						<p>¥{{prod.price}}</p>
 						<div class="shangpin_neirong_box2_cart">加入购物车</div>
 						</div>
@@ -76,8 +77,8 @@
 				<script type="text/html" id="zuixinshangjia_template">
 				{{each products as prod}}
 					<div class="shangpin_neirong_box2">
-					<a href="#"><img src="{{prod.img}}"></a>
-					<p><a href="#">{{prod.title}}</a></p>
+					<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
+					<p><a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a></p>
 					<p>¥{{prod.price}}</p>
 					<div class="shangpin_neirong_box2_cart">加入购物车</div>
 					</div>
@@ -93,8 +94,8 @@
 				<script type="text/html" id="chaoliunvzhuang_template">
 				{{each products as prod}}
 					<div class="shangpin_neirong_box2">
-					<a href="#"><img src="{{prod.img}}"></a>
-					<p><a href="#">{{prod.title}}</a></p>
+					<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
+					<p><a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a></p>
 					<p>¥{{prod.price}}</p>
 					<div class="shangpin_neirong_box2_cart">加入购物车</div>
 					</div>
@@ -110,8 +111,8 @@
 				<script type="text/html" id="jingpinnanzhuang_template">
 				{{each products as prod}}
 					<div class="shangpin_neirong_box2">
-					<a href="#"><img src="{{prod.img}}"></a>
-					<p><a href="#">{{prod.title}}</a></p>
+					<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
+					<p><a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a></p>
 					<p>¥{{prod.price}}</p>
 					<div class="shangpin_neirong_box2_cart">加入购物车</div>
 					</div>
@@ -127,8 +128,8 @@
 				<script type="text/html" id="jingxizhekou_template">
 				{{each products as prod}}
 					<div class="shangpin_neirong_box2">
-					<a href="#"><img src="{{prod.img}}"></a>
-					<p><a href="#">{{prod.title}}</a></p>
+					<a href="/html/detail.html?{{prod.id}}"><img src="{{prod.img}}"></a>
+					<p><a href="/html/detail.html?{{prod.id}}">{{prod.title}}</a></p>
 					<p>¥{{prod.price}}</p>
 					<div class="shangpin_neirong_box2_cart">加入购物车</div>
 					</div>

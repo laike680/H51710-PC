@@ -1,0 +1,152 @@
+.register_content{
+	width:100%;
+	height:700px;
+	overflow: hidden;
+	.register_bg{
+		height:700px;
+		background: url(/images/reg_bg.jpg) no-repeat;
+		background-size: 100% 700px;
+		overflow: hidden;
+		.register_box{
+			width:420px;
+			height:540px;
+			background-color: #fff;
+			margin:auto;
+			margin-top: 80px;
+			border-radius: 5px;
+			.register_top{
+				height:80px;
+				line-height: 80px;
+				font-size: 15px;
+				font-weight: 600;
+				color: #595757;
+				padding-left: 65px;
+			}
+			.register_form{
+				width:372px;
+				height: 350px;
+				padding:0 24px;
+				font-size: 12px;
+				position: relative;
+				.register_form_fangshi,.register_form_xingbie{
+					width:322px;
+					height:40px;
+					box-sizing:border-box;
+					padding-top:10px;
+					span{
+						color: red;
+					}
+					input{
+						margin-left: 3px;
+					}
+				}
+				.register_form_text_zhanghao,.register_form_text_yangzhengma,.register_form_password_new,.register_form_password_again{
+					width:320px;
+					height:40px;
+					border: 1px solid #bbb;
+					margin-bottom: 8px;
+					padding:0 25px;
+				}
+				.register_form_zhaohuimima{
+					text-align: right;
+					margin-bottom: 8px;
+					a{
+						color: #444;
+					}
+				}
+				.register_form_tishi{
+					width:322px;
+					height:30px;
+					padding:0 25px;
+					background-color: #fffbbe;
+					margin-bottom: 8px;
+					text-align: center;
+					line-height: 30px;
+					color: red;
+					display: none;
+				}
+				.register_form_btn{
+					width:322px;
+					height:40px;
+					padding:0 25px;
+					background-color: #04b4ae;
+					margin-bottom: 8px;
+					text-align: center;
+					line-height: 40px;
+					font-size: 14px;
+					color: #fff;
+					cursor: pointer;
+				}
+				.register_form_zhuce{
+					text-align: right;
+					color: #999;
+					a{
+						color: #444;
+					}
+				}
+				.form_tubiao_zhanghao1,.form_tubiao_zhanghao2{
+					width:16px;
+					height:16px;
+					position: absolute;	
+					left: 29px;				
+					background: url(/images/icon.png) no-repeat 0 -810px;
+				}
+				.form_tubiao_zhanghao1{
+					top:52px;	
+				}
+				.form_tubiao_zhanghao2{
+					top:102px;
+				}
+
+				.form_tubiao_mima1,.form_tubiao_mima2{
+					width:16px;
+					height:16px;
+					position: absolute;
+					left: 29px;
+					background: url(/images/icon.png) no-repeat 0 -840px;
+				}
+				.form_tubiao_mima1{
+					top:192px;	
+				}
+				.form_tubiao_mima2{
+					top:242px;	
+				}
+				.get_yanzhengma{
+					width:110px;
+					height:36px;
+					background-color: #3b9b6c;
+					color: #fff;
+					text-align: center;
+					line-height: 35px;
+					font-size: 12px;
+					border-radius: 3px;
+					position: absolute;
+					cursor: pointer;
+					top:93px;
+					right: 27px;
+				}
+			}
+			.register_bottom{
+				height:110px;
+				width:332px;
+				padding:0 44px;
+				.register_bottom_pic_qq,.register_bottom_pic_weibo,.register_bottom_pic_weixin{
+					width:20px;
+					height:20px;
+					float: right;
+					margin-left: 10px;
+					margin-top: 50px;
+				}
+				.register_bottom_pic_qq{
+					background: url(/images/login_app.png) no-repeat -2px -153px;
+				}
+				.register_bottom_pic_weibo{
+					background: url(/images/login_app.png) no-repeat -2px -131px;
+				}
+				.register_bottom_pic_weixin{
+					background: url(/images/login_app.png) no-repeat -2px -176px;
+				}
+			}
+		}
+	}
+}

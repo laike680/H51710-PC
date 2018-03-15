@@ -1,0 +1,433 @@
+.detail_conten{
+	overflow: hidden;
+	width:100%;
+	/*上部*/
+	.detail_top{
+		width:1100px;
+		height:746px;
+		margin: 0 auto;
+		.detail_top_header{
+			font-size: 14px;
+			font-weight: 600;
+			height:60px;
+			line-height: 80px;
+			border-bottom: 1px dashed #ccc;
+			a{
+				color: #444;
+			}
+		}
+		/*主要购物功能*/
+		.detail_top_neirong{
+			position: relative;
+			/*左侧*/
+			.detail_top_neirong_left{
+				width:80px;
+				height:686px;
+				float: left;
+				div{
+					width:72px;
+					height:91px;
+					margin-top:20px;
+					border: 1px solid #fff;
+					img{
+						width:72px;
+						height:91px;
+					}
+				}
+			}
+			/*大图，放大镜功能*/
+			.detail_top_neirong_imgbox{
+				width:487px;
+				height:686px;
+				float: left;
+				position: relative;
+				img{
+					width:487px;
+					height:660px;
+				}
+				.detail_top_neirong_img_jingtou{
+					width:100px;
+					height: 100px;
+					position: absolute;
+					z-index: 99;
+					top: 0;
+					left: 0;
+					background-color: rgba(6,194,188,0.2); 
+					display:none;
+				}
+				/*局部放大*/
+				
+			}
+			.detail_top_neirong_imgbigbox{
+				position: absolute;
+				width:487px;
+				height:660px;
+				border: 1px solid #ccc;
+				right:30px;
+				top: 0;
+				display: none;
+				overflow: hidden;
+				z-index: 1;
+				img{
+					position: absolute;
+					width:1948px;
+					height:2664px;
+				}
+			}
+			/*右侧*/
+			.detail_top_neirong_right{
+				width:330px;
+				height:686px;
+				float: left;
+				margin-left: 20px;
+				/*style3介绍*/
+				.detail_top_neirong_right_style3{
+					height:60px;
+					line-height: 60px;
+					font-size: 12px;
+					color: #a3a3a3;
+					a{
+						color:#04b4ae;
+					}
+				}
+				/*title介绍*/
+				.detail_top_neirong_right_title{
+					font-size: 12px;
+					font-weight: 600;
+					height: 45px;
+				}
+				/*折扣*/
+				.detail_top_neirong_right_zhekou{
+					font-size: 12px;
+					height:36px;
+					span{
+						color: red;
+					}
+				}
+				/*价格*/
+				.detail_top_neirong_right_price{
+					font-size: 26px;
+					color: #ccc;
+					height: 50px;
+					line-height: 50px;
+					b{
+						color: red;
+						font-size: 22px;
+						margin-right: 10px;
+					}
+					span{
+						color: #666;
+						font-size: 13px;
+						margin-left: 10px;
+						del{
+							margin-left: 6px;
+						}
+					}	
+				}
+				/*颜色*/
+				.detail_top_neirong_right_yanse{
+					margin-top: 20px;
+				    font-size: 12px;
+					line-height: 35px;
+					height: 35px;
+					color: #666;
+					
+					/*颜色选择*/
+					.detail_top_neirong_right_yanse_hei,.detail_top_neirong_right_yanse_hui,.detail_top_neirong_right_yanse_bai{
+						font-weight: 600;
+						font-size: 12px;
+						display: inline-block;
+						width: 55px;
+						height: 35px;
+						border: 1px solid #ccc;
+						text-align: center;
+						margin-right: 20px;
+						border-radius: 3px;
+						cursor: pointer;
+						position: relative;
+						&:hover{
+							border:1px solid #04b4ae;
+						}
+					}
+				}
+				/*尺码*/
+				.detail_top_neirong_right_chima{
+					font-size: 12px;
+					line-height: 35px;
+					height: 30px;
+					color: #666;
+					margin-top: 25px;
+					margin-bottom: 15px;
+					
+					/*尺码选择*/
+					.detail_top_neirong_right_chima_s,.detail_top_neirong_right_chima_m,.detail_top_neirong_right_chima_l,.detail_top_neirong_right_chima_xl{
+						font-weight: 600;
+						 font-size: 12px;
+						display: inline-block;
+						width: 55px;
+						height: 30px;
+						border: 1px solid #ccc;
+						text-align: center;
+						margin-right: 10px;
+						border-radius: 3px;
+						cursor: pointer;
+						position: relative;
+						&:hover{
+							border:1px solid #04b4ae;
+						}
+					}
+				}
+				/*右下角标记*/
+				.detail_top_neirong_right_biaoji{
+					width: 12px;
+					height: 12px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					background: url(/images/icon.png) no-repeat -1px -213px; 
+					display: none;
+				}
+				/*数量*/
+				.detail_top_neirong_right_shuliang{
+					font-size: 12px;
+					line-height: 35px;
+					height: 30px;
+					color: #666;
+					margin-top: 25px;
+					margin-bottom: 15px;
+					/*数量加减*/
+					.detail_shuliang_jian,.detail_shuliang_jia{
+						width: 25px;
+						height: 25px;
+						
+					}
+					/*数量输入*/
+					.detail_shuliang{
+							height: 23px;
+							width: 50px;
+							text-align: center;
+							border: 1px solid #ccc;
+					}
+					/*库存*/
+					.detail_shuliang_kucun{
+						font-weight: 600;
+						color: red;
+					}
+				}
+				/*加入购物车*/
+				.detail_top_neirong_right_cart{
+					height: 50px;
+					margin-top: 40px;
+					.detail_buy,.detail_addCart,.detail_addFavorites{
+						width:90px;
+						height:40px;
+						float: left;
+						font-size: 12px;
+						background-color: #666;
+						border-radius: 3px;
+						margin-left: 10px;
+						text-align: center;
+						line-height: 40px;
+						color: #fff;
+						cursor: pointer;
+						box-sizing:border-box;
+						&:hover{
+							border:1px solid #04b4ae;
+							background-color: #04b4ae;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	/*下部*/
+	.detail_bottom{
+		width:1100px;
+		margin: 0 auto;
+		/*详情导航*/
+		.detail_bottom_nav{
+			width:1100px;
+			height: 50px;
+			border: 1px solid #ccc;
+			border-right:0; 
+			li{
+				float: left;
+				width: 219px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				border-right: 1px solid #ccc;
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+		/*购买须知*/
+		.detail_bottom_goumaixuzhi{
+			.detail_bottom_goumaixuzhi_header{
+				height:60px;
+				line-height: 60px;
+				font-size: 18px;
+				color: #04b4ae;
+				font-weight: 600;
+				i{
+					color: #999;
+					margin-left: 15px;
+				}
+			}
+			.detail_bottom_goumaixuzhi_main{
+				height: 160px;
+				font-size: 14px;
+				p{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		/*设计师寄语*/
+		.detail_bottom_shejishi{
+			.detail_bottom_shejishi_header{
+				height:60px;
+				line-height: 60px;
+				font-size: 18px;
+				color: #04b4ae;
+				font-weight: 600;
+				i{
+					color: #999;
+					margin-left: 15px;
+				}
+			}
+			.detail_bottom_shejishi_main{
+				height: 160px;
+				font-size: 14px;
+				p{
+					margin-bottom: 20px;
+					text-indent: 2em;
+					line-height: 30px;
+				}
+			}
+		}
+		/*商品图片*/
+		.detail_bottom_tupian{
+			.detail_bottom_tupian_header{
+				height:60px;
+				line-height: 60px;
+				font-size: 18px;
+				color: #04b4ae;
+				font-weight: 600;
+				i{
+					color: #999;
+					margin-left: 15px;
+				}
+			}
+			.detail_bottom_tupian_main{
+				overflow: hidden;
+
+				img{
+					width:500px;
+					height: 700px;
+					float: left;
+					margin-right: 50px;
+					margin-bottom: 50px;
+				}
+			}
+		}
+		/*同款推荐*/
+		.detail_bottom_tongkuan{
+			.detail_bottom_tongkuan_header{
+				height:60px;
+				line-height: 60px;
+				font-size: 18px;
+				color: #04b4ae;
+				font-weight: 600;
+				i{
+					color: #999;
+					margin-left: 15px;
+				}
+			}
+			.detail_bottom_tongkuan_mian{
+				height: 360px;
+				font-size: 12px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content:space-between;
+				.tongkuan_box{
+					width: 220px;
+					height: 350px;
+					text-align: center;
+					img{
+						width: 220px;
+						height: 280px;
+					}
+					a{
+						color:#000;
+					}
+					p{
+						height: 30px;
+						color: red;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		/*同店推荐*/
+		.detail_bottom_tongdian{
+			.detail_bottom_tongdian_header{
+				height:60px;
+				line-height: 60px;
+				font-size: 18px;
+				color: #04b4ae;
+				font-weight: 600;
+				i{
+					color: #999;
+					margin-left: 15px;
+				}
+			}
+			.detail_bottom_tongdian_mian{
+				height: 360px;
+				font-size: 12px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content:space-between;
+				.tongdian_box{
+					width: 220px;
+					height: 350px;
+					text-align: center;
+					img{
+						width: 220px;
+						height: 280px;
+					}
+					a{
+						color:#000;
+					}
+					p{
+						height: 30px;
+						color: red;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+	.detail_right{
+		width:35px;
+		height:1000px;
+		background-color: #000;
+		position: fixed;
+		right: 0;
+		font-size: 12px;
+		top: 0;
+		display: none;
+		.detail_right_box{
+			border-top:1px solid #ccc;
+			margin-top:80px;
+			li{	
+				color: #eee;
+				padding: 10px 8px;
+				border-bottom: 1px solid #ccc;
+				cursor: pointer;
+				a{color: #eee;}
+			}
+		}
+		
+	}
+}

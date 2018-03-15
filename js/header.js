@@ -1,4 +1,5 @@
 $(function(){
+	$.cookie.json=true;
 	// 加载头部
 	$("header").load("/html/include/header.html",function(){
 
@@ -21,7 +22,7 @@ $(function(){
 		// 划入下拉
 		$(".nav_all").on("mouseenter",function(){
 			$(".nav_pull_woman").css({"display":"block"});
-
+		// 划出
 		}).on("mouseleave",function(){
 			$(".nav_pull_woman").css({"display":"none","color":"#f1dead"});
 			$(".nav_pull_man").css({"display":"none"});
@@ -43,16 +44,46 @@ $(function(){
 			$(".nav_pull_woman").css({"display":"none"});
 		});
 		
+
+		// 获取cookie中账号信息，显示在头部
+		var _now_login=$.cookie("now_login");
+
+
+			var allshangpins=$.cookie("cartCookie")||[];
+			var _carts_num=0;
+					
+			for(var i=0,len=allshangpins.length;i<len;i++){
+						_carts_num+=allshangpins[i].shuangliang
+						
+			};
+
+		// 判断是否已登录
+		if ($.cookie("now_login")) {
+			$(".login_on").css({"display":"block"});
+			$(".login_off").css({"display":"none"});
+		}else{
+			$(".login_on").css({"display":"none"});
+			$(".login_off").css({"display":"block"});
+		};
+
+		// 退出
+		$(".login_tuichu").on("click",function(){	
+			$(".login_on").css({"display":"none"});
+			$(".login_off").css({"display":"block"});
+			$.removeCookie("now_login",{path:"/"});
+			$.removeCookie("carts",{path:"/"});
+		});
+
 		// 滚动吸顶
 		$(window).scroll(function(){
 			var _top=$(window).scrollTop();
 			if(_top>130){
 				$(".header_bottom_box").css({"position":"fixed","top":0,"z-index":9});
-				$(".login_on").html('<a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><br/><a href="#">我的定制</a><span>|</span> <a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">0</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
+				$(".login_on").html('<a href="#" class="login_zhanghao">'+_now_login+'</a><a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><br/><a href="#">我的定制</a><span>|</span> <a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">'+_carts_num+'</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
 				$(".login_on").css({"position":"position","top":5,"left":-80})
 			}else{
 				$(".header_bottom_box").css({"position":"static"});
-				$(".login_on").html('<a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><span>|</span><a href="#">我的定制</a><span>|</span><a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">0</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
+				$(".login_on").html('<a href="#" class="login_zhanghao">'+_now_login+'</a><a href="#">欢迎您！</a><span>|</span> <a href="#">我的订单</a><span>|</span><a href="#">我的定制</a><span>|</span><a href="#" class="login_cart">购物车</a><span class="shangpinzhonglei">'+_carts_num+'</span><span>|</span> <a href="#">退出</a><div class="xinxi">请点击完善个人信息</div><div class="shanjiao"></div></div></div></div></div>');
 				$(".login_on").css({"position":"position","top":-20,"left":-180});
 				
 			};
@@ -85,16 +116,16 @@ $(function(){
 							$(".search_soso div").on("click",function(){				
 								$(".search .search_box :text").val($(this).text());
 								$(".search_soso").html("");
-								console.log(1)
 
 							});
 						}
-					})	
-					
+					});						
 			});
 
-			
+					
 	
 
 	});
+
+
 });
